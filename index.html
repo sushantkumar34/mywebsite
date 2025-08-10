@@ -3,67 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushant's Website</title>
+    <title>Sushant Chaudhary | Portfolio</title>
     <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #1d2b64, #f8cdda);
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #5ec4ff, #1d8cf8);
             color: white;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            animation: fadeIn 2s ease-in-out;
+            animation: fadeIn 1s ease-in;
         }
-        .container {
-            max-width: 600px;
-            padding: 20px;
+        header {
+            padding: 40px 20px;
+            background: rgba(0,0,0,0.2);
         }
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
+        header h1 {
+            font-size: 2.5rem;
             animation: slideDown 1s ease-out;
         }
-        p {
+        header p {
             font-size: 1.2rem;
-            margin-bottom: 20px;
+            margin-top: 10px;
             opacity: 0.9;
-            animation: fadeIn 2s ease-in-out;
         }
-        button {
-            padding: 12px 30px;
-            font-size: 16px;
-            background: white;
-            color: #1d2b64;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-            animation: fadeIn 3s ease-in-out;
+        section {
+            padding: 40px 20px;
         }
-        button:hover {
-            background: #f0f0f0;
-            transform: scale(1.05);
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .about, .skills, .contact {
+            background: rgba(255,255,255,0.1);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        ul { list-style: none; }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+            color: #ffdd57;
         }
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {opacity: 0;}
+            to {opacity: 1;}
         }
         @keyframes slideDown {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {transform: translateY(-20px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Sushant's Website 🚀</h1>
-        <p>This is my first professional website made entirely on my phone!</p>
-        <button onclick="alert('Hello from Sushant!')">Say Hi</button>
-    </div>
+    <header>
+        <h1>Sushant Chaudhary</h1>
+        <p>Student | Learner | Dream Chaser</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi, I am Sushant, a passionate student who loves learning new skills, exploring science, and building creative projects.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills & Education</h2>
+        <ul>
+            <li>📚 Class 11 PCB Stream</li>
+            <li>⚛️ Science & Technology Enthusiast</li>
+            <li>💻 Basic Coding & Web Development</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me on social media!</p>
+        <div class="social-links">
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank">📱 WhatsApp</a>
+            <a href="https://instagram.com/yourusername" target="_blank">📸 Instagram</a>
+            <a href="mailto:yourmail@example.com">📧 Email</a>
+        </div>
+    </section>
 </body>
 </html>
